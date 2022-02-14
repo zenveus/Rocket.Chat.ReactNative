@@ -53,7 +53,7 @@ class Sdk {
 		>
 			? void
 			: Serialized<OperationParams<'GET', MatchPathPattern<TPath>>>
-	): Promise<Serialized<OperationResult<'GET', MatchPathPattern<TPath>>>> {
+	): Promise<Serialized<ResultFor<'GET', MatchPathPattern<TPath>>>> {
 		return this.sdk.get(endpoint, params);
 	}
 
